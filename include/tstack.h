@@ -2,7 +2,7 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
-template<typename T, int 100>
+template<typename T, int size>
 class TStack {
  private:
   T arr[100];
@@ -13,13 +13,13 @@ class TStack {
     return arr[top];
   }
   int isFull() const {
-    return top == 99;
+    return top == size -1 ;
   }
   int isEmpty() const {
     return top == -1;
   }
   void push(T w) {
-    if (top < 99)
+    if (top < size - 1)
       arr[++top] = w;
   }
   void pop() {
