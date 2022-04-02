@@ -13,7 +13,7 @@ class TStack {
     return arr[top];
   }
   int isFull() const {
-    return top == size -1 ;
+    return top == size - 1;
   }
   int isEmpty() const {
     return top == -1;
