@@ -32,8 +32,9 @@ std::string infx2pstfx(std::string inf) {
       } else {
           int k = prior(inf[i]);
           bool f = false;
-          if ((stack.isEmpty()) || (k > prior(stack.get())))
+          if ((stack.isEmpty()) || (k > prior(stack.get()))) {
             f = true;
+          }
             if (((k == 0) || f) && (k != 1)) {
               stack.push(inf[i]);
             } else {
