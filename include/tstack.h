@@ -27,4 +27,5 @@ class TStack {
       top--;
   }
 };
+int prior(char ch);
 #endif  // INCLUDE_TSTACK_H_
